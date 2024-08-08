@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verbete Nacional de Socorro - INEM</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Verbete Nacional de Socorro</h1>
+        <h2>INEM - Instituto Nacional de Emergência Médica</h2>
+
+        <form>
+            <div class="section">
+                <h3>Dados do Paciente</h3>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade">
+
+                <label for="genero">Género:</label>
+                <select id="genero" name="genero">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+
+                <label for="contacto">Contacto de Emergência:</label>
+                <input type="text" id="contacto" name="contacto">
+            </div>
+
+            <div class="section">
+                <h3>Detalhes da Emergência</h3>
+                <label for="data">Data do Incidente:</label>
+                <input type="date" id="data" name="data">
+
+                <label for="hora">Hora do Incidente:</label>
+                <input type="time" id="hora" name="hora">
+
+                <label for="local">Local do Incidente:</label>
+                <input type="text" id="local" name="local">
+
+                <label for="descricao">Descrição do Incidente:</label>
+                <textarea id="descricao" name="descricao"></textarea>
+            </div>
+
+            <div class="section">
+                <h3>Avaliação Inicial</h3>
+                <label for="consciencia">Estado de Consciência:</label>
+                <select id="consciencia" name="consciencia">
+                    <option value="consciente">Consciente</option>
+                    <option value="inconsciente">Inconsciente</option>
+                    <option value="semi-consciente">Semi-Consciente</option>
+                </select>
+
+                <label for="pulsacao">Pulsações:</label>
+                <input type="text" id="pulsacao" name="pulsacao">
+
+                <label for="respiracao">Respiração:</label>
+                <input type="text" id="respiracao" name="respiracao">
+            </div>
+
+            <button type="submit">Submeter Verbete</button>
+        </form>
+    </div>
+</body>
+</html>
